@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Madness</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-game-url.com/">
+    <meta property="og:title" content="Pong Madness - The Chaotic Arcade Classic">
+    <meta property="og:description" content="Play the most insane version of Pong ever created with unpredictable physics, multiball chaos, and gravity madness!">
+    <meta property="og:image" content="https://your-game-url.com/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-game-url.com/">
+    <meta property="twitter:title" content="Pong Madness - The Chaotic Arcade Classic">
+    <meta property="twitter:description" content="Play the most insane version of Pong ever created with unpredictable physics, multiball chaos, and gravity madness!">
+    <meta property="twitter:image" content="https://your-game-url.com/og-image.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <!-- Warning for inverted controls -->
+        <div class="warning hidden">CONTROLS INVERTED!</div>
+        
+        <!-- UI Container at the top -->
+        <div class="ui-container">
+            <div class="game-stats">
+                <!-- Score display -->
+                <div class="score">
+                    <span id="leftLabel">Human</span>
+                    <span id="leftScoreValue">0</span>
+                    :
+                    <span id="rightScoreValue">0</span>
+                    <span id="rightLabel">AI</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Game Canvas -->
+        <div class="game-container">
+            <div class="game-main">
+                <canvas id="gameCanvas"></canvas>
+            </div>
+        </div>
+        
+        <!-- Instructions at the bottom -->
+        <div class="instructions-container">
+            <div class="instructions">
+                <p>Left Player: W/S | Right Player: ↑/↓ | Game starts as AI vs AI until you press a key</p>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
