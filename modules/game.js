@@ -15,7 +15,7 @@ export class Game {
     constructor() {
         // Default game configuration
         this.defaultParams = {
-            ballSpeed: 3.5,
+            ballSpeed: 5,
             ballSize: 10,
             paddleSize: 100, // Changed from paddleHeight to paddleSize
             paddleWidth: 15,
